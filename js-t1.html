@@ -1,5 +1,21 @@
 <html>
-    <body>
-        hello
-    </body>
+
+<body>
+    <h1 id="result"></h1>
+    <button onclick="calculate()">Count UP</button>
+</body>
+<script>
+    num = 0;
+    display()
+    
+    function calculate() {
+        num += 1;
+        display()
+    }
+
+    function display(){
+        document.getElementById("result").innerHTML = num;
+    }
+</script>
+
 </html>
